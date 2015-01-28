@@ -1,0 +1,40 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 3
+
+   Special Effects style sheet
+   Author: Doug Strouth
+   Date:   11/25/14
+
+   Filename:         sweffects.css
+   Supporting Files: 
+
+*/
+
+body {
+    background:
+    radial-gradient(closest-corner at 40% 70%, white, rgba(171,171,171,.5) 50%), /*Step 2 */
+    radial-gradient(closest-corner at 80% 20%, white, rgba(171,171,171,.5) 20%), /*Step 3 */
+    radial-gradient(closest-side at 10% 10%, white, rgba(171,171,171,.5) 25%)/*Step 3 */;
+    
+    /* For Opera Step 4 */
+    background: -o-radial-gradient(40% 70%, closest-corner,white, rgba(171,171,171,.5) 50%),
+                -o-radial-gradient(80% 20%, closest-corner,white, rgba(171,171,171,.5) 20%),
+                -o-radial-gradient(10% 10%, closest-corner,white, rgba(171,171,171,.5) 25%);
+                
+    /* For Firefox Step 4*/            
+    background: -moz-radial-gradient(40% 70%, closest-corner,white, rgba(171,171,171,.5) 50%),
+                -moz-radial-gradient(80% 20%, closest-corner,white, rgba(171,171,171,.5) 20%),
+                -moz-radial-gradient(10% 10%, closest-corner,white, rgba(171,171,171,.5) 25%);
+  
+    
+    
+    /* For webkit Step 5 */
+    background: -webkit-gradient(radial,40% 70%, 0, 40% 70%, 180, from(white), to(rgba(171,171,171,.5))),
+     -webkit-gradient(radial,80% 20%, 0, 80% 20%, 90, from(white), to(rgba(171,171,171,.5))),
+      -webkit-gradient(radial,10% 10%, 0, 10% 10%, 20, from(white), to(rgba(171,171,171,.5)));
+    
+}
+
+}

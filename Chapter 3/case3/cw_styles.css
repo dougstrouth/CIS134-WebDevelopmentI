@@ -1,0 +1,104 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 3
+
+   Civil War History Text and Color Style
+   Author: Doug Strouth
+   Date:   10/9/14
+
+   Filename:         cw_styles.css
+   Supporting Files: cw_layout.css
+. before classes
+*/
+
+@import "cw_layout.css"; /*Step 4: The @import rule allows you to link to a supporting stylesheet without having to retype the whole document or you can pick and choose what elements of it you wish to use  */
+
+body {
+	font-family: Palatino Linotype, Book Antiqua, serif;
+}
+/*Step 7 */
+body>header>h1 {
+	background: hsl(212,100%,29%);
+}
+
+/*Step 6 */
+h1, h2, h3, h4, h5, h6 {
+	color: hsla(212,0%,0%,.4);
+	font-family: Trebuchet MS, Helvetica, sans-serif;
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-indent: 5px;
+}
+
+
+/*Step 8 */
+.horizontal ul {
+	font-family: Century Gothic MS, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	line-height: 20px;
+	list-style-type: none;
+}
+/*Step 9 */
+.horizontal ul a[href]{
+	color: hsl(212,100%,70%);
+	text-decoration: none;
+}
+/*Step 9 */
+.horizontal ul a[href]:hover{
+	color: hsl(212,100%,29%);
+}
+
+/*Step 10 */
+.vertical {
+	background-color: hsl(32,100%,95%);
+}
+
+/*Step 11 */
+.vertical h4 {
+	color: hsla(32,0%,0%,.5);
+	font-size: 18px;
+	text-indent: 15px;
+}
+/*Step 12 */
+.vertical ol {
+	list-style-type: upper-roman;
+	line-height: 2em;
+
+}
+/*Step 12 */
+.vertical ol li li{
+	list-style-type: upper-alpha;
+	line-height: 2em;
+}
+
+/*Step 13 */
+.vertical ol a[href]{
+	color: hsla(212,100%,29%,.6);
+	text-decoration: none;
+}
+/*Step 13 */
+.vertical ol a[href]:hover{
+	color: hsla(212,100%,29%,1);
+	text-decoration: underline;
+}
+/*Step 14 */
+section{
+	background-color: hsl(212,95%,90%);
+}
+
+/*Step 15 */
+article h2+p:first-letter
+ {
+	font-size: 32px;
+}
+/*Step 16 */
+footer p {
+	font-size: 10px;
+	line-height: 30px;
+	text-align: center;
+
+}
+

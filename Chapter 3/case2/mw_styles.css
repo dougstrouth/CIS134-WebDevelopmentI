@@ -1,0 +1,100 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 2
+
+   Mountain Wheels Text and Color Style
+   Author:
+   Date:
+
+   Filename:         mw_layout.css
+   Supporting Files: none
+*/
+
+/*Step 5*/
+body {
+  font-family:Tahoma,Geneva, sans-serif;
+}
+/*Step 6*/
+#articleheader{
+  font-size:18px;
+  font-weight:400;
+  letter-spacing:7px;
+
+}
+
+/*Step 7*/
+nav {
+  background-color:rgb(125,120,89);
+  line-height:3em;
+
+}
+/*Step 8*/
+nav ul li a[href] {
+  color:white;
+  color:rgba(255,255,255,.5);
+  text-decoration:none;
+}
+/*Step 9*/
+nav ul li:hover{
+  background-color:rgb(132,121,36);
+  list-style-image:url(wheelmarker.png);
+}
+/*Step 10*/
+nav ul li a[href]:hover {
+  color:yellow;
+  color:rgba(255,255,255,1);
+}
+
+/*Step 10*/
+#leftsection p {
+  font-size:22px;
+}
+/*Step 10*/
+#leftsection > p:first-of-type:first-line{
+text-transform:uppercase;
+}
+
+/*Step 11*/
+blockquote{
+  background-color:rgb(131,121,36);
+  color:white;
+  font-size:16px;
+  font-family:Comic Sans MS, Times, cursive;
+}
+/*Step 12*/
+blockquote p:before{
+  content:'"';
+}
+/*Step 12*/
+blockquote p:after{
+  content:'"';
+
+}
+
+/*Step 13*/
+#rightsection h1{
+  font-size:22px;
+  letter-spacing:3px;
+  text-decoration:none;
+  text-align:center;
+}
+/*Step 13*/
+#rightsection h2{
+  font-size:18px;
+  text-align:right;
+  text-decoration:none;
+}
+/*Step 13*/
+#rightsection p{
+  color:gray;
+  font-size:14px;
+  text-align:justify;
+}
+
+/*Step 14*/
+footer address {
+  font-size:16px;
+  font-style:normal;
+  text-align:center;
+}

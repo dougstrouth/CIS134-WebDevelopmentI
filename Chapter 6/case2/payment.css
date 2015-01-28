@@ -1,0 +1,134 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 2
+
+   The Spice Bowl Payment Form Style Sheet
+   Author: Doug Strouth
+   Date:   11/6/14
+
+   Filename:         payment.css
+   Supporting Files: go.png, stop.png
+
+*/
+
+fieldset {
+    border: none;
+    margin: 5px; /*Step 20 */
+    
+    
+}
+
+fieldset legend {
+    background-color:rgb(239, 198, 145);
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+    width: 100%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    /*Step 20 */
+    
+}
+
+label {
+    display: block;
+    clear: left;
+    float: left ;
+    font-size: .8em;
+    text-align: right;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 25%; /*Step 21*/
+    
+}
+
+input {
+    display: block;
+    float: left;
+    font-size: .9em;
+    width: 60%;
+    margin: 2px 0px; /*Step 22*/
+    
+}
+
+select {
+    display: block;
+    float: left;
+    font-size: .9em;
+    margin: 2px;
+    /*Step 23*/
+    
+}
+
+textarea {
+    display: block;
+    float: left;
+    font-size: .9em;
+    height: 75px;
+    width:60%; /*Step 24*/
+    
+}
+
+
+fieldset.optionGroup {
+    margin-left: 25%;
+    /*Step 25*/
+}
+fieldset.optionGroup label{
+    display: inline;
+    float: none;
+    width: 100px;
+    /*Step 25*/
+}
+
+fieldset.optionGroup input {
+    display: inline;
+    float: none;
+    margin: 0px;
+    width: 20px; /*Step 26*/
+    
+    
+}
+
+input#csc {
+    width: 50px; /*Step 27*/
+}
+
+input[type="submit"]{
+    background-color: rgb(239,198,145);
+    float: none;
+    height: 30px;
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; /*Step 28*/
+    
+}
+input:focus, select:focus, textarea:focus {
+       background-color: rgb(255, 218, 165); /*Step 29 */
+}
+
+input:focus:invalid {
+       background: rgb(255, 245, 215) url(stop.png) bottom right
+no-repeat;
+       -o-background-size: contain;
+       -moz-background-size: contain;
+       -webkit-background-size: contain;
+       background-size: contain; /*Step 30 */}
+
+
+
+input:focus:valid {
+       background: rgb(215, 255, 215) url(go.png) bottom right
+no-repeat;
+       -o-background-size: contain;
+       -moz-background-size: contain;
+       -webkit-background-size: contain;
+       background-size: contain; /*Step 31 */
+}

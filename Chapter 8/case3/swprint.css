@@ -1,0 +1,77 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 3
+
+   SkyWeb Print Styles
+   Author: Doug Strouth
+   Date:   11/25/14
+
+   Filename:         swprint.css
+   Supporting Files: 
+
+*/
+
+/*Step 9 */
+@page {
+       size: 8.5in 11in portrait;
+       margin: 0.5in;
+}
+/*Step 10*/
+nav, footer {
+       display: none;
+}
+
+/*Step 11 */
+header img{
+    positon: fixed;
+    top: 0in;
+    left: 2in;
+    
+}
+
+/*Step 12 */
+article {
+    padding-top: 1.5in;
+    page-break-after: always;
+    page-break-inside: avoid;
+    
+}
+/*Step 13 */
+article p {
+    font-size: 13pt;
+    margin: .2in;
+
+}
+
+/*Step 14 */
+#left h1 {
+    font-size: 28pt;
+    text-align: center;
+}
+
+/*Step 15 */
+#right h1 {
+    font-size: 24pt;
+    
+}
+
+
+/*Step 16 */
+#right img{
+    display: block;
+    width: 4in;
+    margin: .5in auto;
+    
+}
+/*Step 17 */
+a:link{
+    color: black;
+    font: italic;
+    
+}
+/*Step 18 */
+a:after{
+    content: " (" attr(href) ") ";
+    
+}

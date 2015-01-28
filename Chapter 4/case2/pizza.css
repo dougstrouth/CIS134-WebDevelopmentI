@@ -1,0 +1,203 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 2
+
+   Pizza Style Sheet
+   Author: Doug Strouth
+   Date:   10/16/14
+
+   Filename:         pizza.css
+   Supporting Files: 
+
+*/
+
+/*Step 3 */
+header, section, aside, footer, nav {
+    
+    display: block;
+} 
+
+* {
+     padding: 0px;
+    margin: 0px; /* Step 4 */
+    
+}
+
+body {
+   
+    background: red;
+    font-family: Verdana, Geneva, sans-serif; /* Step 5 */
+    
+}
+
+#container {
+    width: 1000px; /*Step 6a */
+    margin: 0px auto; /*Step 6b */
+    border-left: 1px solid black;
+    border-right: 1px solid black; /*Step 6c */
+    background-color: white;
+    background-image: url(redbar.png);
+    background-position: left top;
+    background-repeat: repeat-y;  /*Step 6d */
+    
+    
+}
+
+header {
+    background: white;
+    height:100px;
+    /*Step 7 */
+}
+
+nav.horizontal {
+    height: 70px;
+    width: 100%;
+    background: white; /*Step 8 */
+    
+}
+
+nav.horizontal li {
+    background: white; /*Step 9a */
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    width: 180px; /*Step 9b */
+    display: block;
+    float: left; /*Step 9c */
+    margin-left: 5px;
+    margin-right: 5px; /*Step 9d */
+    text-align: center; /*Step 9e */
+}
+
+nav.horizontal li a {
+    display: block; /*Step 10a */
+    background: red;
+    color: white; /*Step 10b */
+    
+    -moz-border-radius: 30px 25px;
+    -webkit-border-radius: 30px 25px;
+    -o-border-radius: 30px 25px;
+    border-radius: 30px 25px; /*Step 10c */
+    
+    text-decoration: none;
+}
+
+nav.horizontal li a:hover {
+    background: rgb(255,101,101);
+    color: black; /*Step 10d */
+    
+}
+
+
+nav.vertical {
+    clear: left;
+    float: left; /*Step 11a */
+    width: 200px; /*Step11b */
+    
+}
+nav.vertical li {
+    list-style: none; /*Step 12a */
+    list-style-position: 20px; /*Step 12b */
+    margin-top: 20px;
+    margin-bottom: 20px; /*Step 12c */
+    
+}
+
+nav.vertical li a {
+    color: white;
+    text-decoration: none; /* Step 13*/
+    
+}
+
+nav.vertical li a:hover{
+    color: black; /* Step 13*/
+    
+}
+
+#main {
+    background-color: rgb(255,211,211); /* Step 14a*/
+    float: left; /* Step 14b*/
+    width: 600px; /* Step 14c*/
+}
+
+#main >p { 
+    font-size: 20px; /* Step 15*/
+    margin: 15px;
+}
+
+#main img {
+    float:right; /* Step 16a*/
+    margin: 15px; /* Step 16b*/
+    width: 350px; /* Step 16c*/
+    
+    -moz-border-bottom-left-radius: 350px;
+    -webkit-border-bottom-left-radius: 350px;
+    -o-border-bottom-left-radius:350px;
+    border-bottom-left-radius: 350px; /* Step 16d*/
+}
+
+.coupon {
+    border: 5px dashed black; /* Step 17a*/
+    float: left; /* Step 17b*/
+    width: 170px;
+    height: 150px; /* Step 17c*/
+    margin: 20px 10px; /* Step 17d*/
+    background: url(notice.png) bottom right no-repeat, url(slice.png) center no-repeat; /* Step 18*/   
+    background-color: white;
+}
+
+.coupon h1 {
+    color: white;
+    background: rgb(192,0,0); /* Step 19a */
+    font-size: 16px;
+    letter-spacing: 2px; /* Step 19b*/
+    text-align: center; /* Step 19c*/
+    height: 25px; /* Step 19d*/
+    font-variant: small-caps; /* Step 19e*/
+}
+
+.coupon p{
+    font-size: 14px;
+    text-align: center; /* Step 20b*/
+    margin: 5px; /* Step 20c */    
+}
+
+aside {
+    float: left;
+    width: 200px; /*Step 21 */
+    
+}
+
+aside h1 {
+    color: rgb(192,0,0); /*Step 22a */
+    font-size: 20px;
+    letter-spacing: 2px;/*Step 22b */
+    font-weight: normal;
+    text-align: center;
+}
+
+aside li {
+    background-color: rgb(255,135,135); /*Step 23a */
+    border-radius: 5px; /*Step 23b */
+    color: black; /*Step 23c */
+    list-style: none; /*Step 23d */
+    margin: 10px;
+    padding: 5px; /*Step 23e */
+}
+
+footer {
+    clear: left;
+    margin-left: 200px;
+    
+}
+
+footer address {
+    border-top: 1px solid red; /*Step 25a */
+    color: red; /*Step 25b */
+    font-size: 10px;
+    font-style: normal;
+    text-align: center; /*Step 25c */
+    margin-top: 25px;
+    padding-bottom: 20px; /*Step 25d */
+}

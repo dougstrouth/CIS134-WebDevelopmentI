@@ -1,0 +1,182 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 3
+
+   Trail Map Style Sheet
+   Author: Doug Strouth
+   Date:   10/16/14
+
+   Filename:         map.css
+   Supporting Files: 
+
+*/
+
+nav, section, figure, figcaption {
+    display: block; /*Step 4 */
+    
+}
+
+time {
+    display: inline; /*Step 5 */
+    color: yellow; /* Step 17*/
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px; /*Step 6 */
+    
+}
+
+body{
+    font-family: Verdana, Geneva, sans-serif; /*Step 7 */
+    
+}
+
+#page {
+    background-color: rgb(255,255,128);
+    background-image: url(bluebar.png);
+    background-repeat: repeat-y;
+    background-position: left; /*Step 8a */
+    border: 15px ridge rgb(70,76,222); /*Step 8b */
+    width: 900px;
+    height: 750px; /*Step 8c */
+    margin: 10px auto 200px auto; /*Step 8c */
+    
+}
+
+nav.vertical {
+    float: left;
+    width: 230px;
+    /*Step 9 */
+}
+
+nav.vertical li{
+    list-style: none;
+    margin: 25px 20px;
+    /*Step 9 */
+}
+
+nav.vertical a{
+    color:white;
+    text-decoration: none;
+    /*Step 9 */
+}
+
+nav.vertical a:hover{
+    color:yellow;
+    text-decoration: none;
+    /*Step 9 */
+}
+
+#summary {
+    float: left;
+    margin-left: 30px;
+    width: 600px;
+    /* Step 10*/        
+}
+
+#summary h1 {
+    color: rgb(70,76,222); /* Step 11a*/
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 5px; /* Step 11b*/
+    margin: 20px; /* Step 11c*/
+}
+
+#summary p {
+    margin: 10px; /* Step 12*/
+    
+}
+
+#map {
+    position: relative; /* Step 13a*/
+    background-color:white; 
+    background: url(lpmap.jpg) top left no-repeat; /* Step 13b*/
+    border: 1px solid black; /* Step 13c*/
+    float: left;
+    margin-left: 30px; /* Step 13d*/
+    width: 600px;
+    height: 294px; /* Step 13e*/
+}
+
+figure {
+    background-color: rgb(70,76,222); /* Step 14a*/
+    color: white; /* Step 14b*/
+    width: 150px; /* Step 14c*/
+    border-radius: 15px; /* Step 14d*/
+    position: absolute; /* Step 14e*/
+    z-index: 1; /* Step 14f*/
+    clip: rect(auto,20px,20px,auto ); /* Step 14g*/
+}
+figure:hover {
+    background-color: rgb(70,76,222); 
+    color: white; 
+    width: 150px; 
+    border-radius: 15px;
+    position: absolute; 
+    z-index: 2; /* Step 15*/
+    clip:auto;
+   
+}
+
+figure figcaption{
+    font-size: 12px;
+    margin: 10px; /* Step 16*/
+    
+}
+
+#point0{
+    left:560px;
+    top: 60px;
+}/*Step 18 */
+
+
+#point1{
+    left:277px;
+    top: 90px;
+}/*Step 18 */
+
+#point2{
+    left:175px;
+    top: 0px;
+}/*Step 18 */
+
+#point3{
+    left:110px;
+    top: 115px;
+}/*Step 18 */
+
+#point4{
+    left:55px;
+    top: 165px;
+}/*Step 18 */
+
+#point5{
+    left:5px;
+    top: 180px;
+}/*Step 18 */
+
+#point6{
+    left:15px;
+    top: 222px;
+}/*Step 18 */
+
+#point7{
+    left: 50px;
+    top: 245px;
+}/*Step 18 */
+
+#point8{
+    left:100px;
+    top: 245px;
+} /*Step 18 */
+
+#point9{
+    left:99px;
+    top: 220px;
+} /*Step 18 */
+
+
+

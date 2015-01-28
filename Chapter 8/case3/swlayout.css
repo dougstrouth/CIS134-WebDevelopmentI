@@ -1,0 +1,177 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 3
+
+   SkyWeb Layout Style Sheet
+
+   Filename:         swlayout.css
+   Supporting Files: 
+
+*/
+
+html {
+   background-color: rgb(31, 31, 31);
+}
+
+strong {
+   font-weight: bold;
+}
+
+p a {
+   color: black;
+   text-decoration: underline;
+}
+
+body {
+   background-color: rgb(101, 101, 101);
+   float: none;
+   margin: 0px auto;
+   width: 90%;
+   max-width: 1000px;
+   min-width: 800px;
+}
+
+header {
+   width: 100%;
+}
+
+header nav.horizontal {
+   width: 100%;
+}
+
+
+header nav.horizontal li {
+   outline: 1px solid rgb(211, 211, 211);
+   background-color: rgb(41, 41, 41);
+   display: block;
+   font-family: Tahoma, Geneva, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   float: left;
+   height: 30px;
+   letter-spacing:3px;
+   line-height: 30px;;
+   text-align: center;
+   width: 16.66%;
+}
+
+
+header nav.horizontal li a {
+   color: white
+}
+
+header img {
+   clear: left;
+   display: block;
+   margin: 5px auto;
+}
+
+
+/* section layout */
+
+
+section#left {
+   float: left;
+   width: 50%;
+   margin-right: 2%;
+}
+
+section#right {
+   float: left;
+   width: 48%;
+   padding-bottom: 20px;
+}
+
+footer {
+   clear: left;
+}
+
+
+
+
+/* left section */
+
+section#left article {
+   width: 95%;
+   margin: 0px auto;
+}
+
+section#left article h1 {
+   color: rgb(31, 31, 31);
+   font-size: 34px;
+   font-family: 'Courier New', courier, monospace;
+   font-weight: bold;
+   margin: 0px 0px 20px 20px;
+}
+
+section#left p img {
+   float: right;
+   margin: 0px 0px 10px 10px;
+   width: 125px;
+}
+
+
+section#left article p {
+   margin: 0px 0px 20px 20px;
+   color: rgb(31, 31, 31);
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+
+section#right article {
+   width: 95%;
+   clear: left;
+}
+
+section#right h1 {
+   font-size: 18px;
+   text-align: center;
+   padding: 15px 0px 10px 0px;
+}
+
+section#right img {
+   float: left;
+   width: 30%;
+   margin-right: 5%;
+}
+
+section#right p {
+   float: left;
+   width: 62%;
+   font-size: 12px;
+}
+
+
+
+
+
+
+
+footer {
+   margin-top: 15px;
+   border-top: 1px solid rgb(171, 171, 171);
+   background-color: rgb(71, 71, 71);
+   color: rgb(231, 231, 231);
+   text-align: right;
+}
+
+footer, footer span  a {
+   font-size: 11px;
+   padding: 10px;
+   color: rgb(231, 231, 231);
+}
+
+footer span a:hover {
+   color: rgb(231, 231, 231);
+   text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+

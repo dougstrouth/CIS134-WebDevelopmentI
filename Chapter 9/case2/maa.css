@@ -1,0 +1,106 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 9
+   Case Problem 2
+
+   Middle Age Arts Style Sheet
+
+   Author: Doug Strouth   
+   Date:    12/1/14  
+
+   Filename:         maa.css
+   Supporting Files: 
+
+*/
+/*Step 6 body changes*/
+body {
+   background: url(gbar.jpg);
+   
+}
+
+img {
+   border-width: 0px;
+}
+
+/*Step 6 Link attribute changes */
+a {
+   color: white;
+   
+}
+a:visited{
+   color: white;
+   
+}
+a:active {
+   color: white;
+   
+}
+
+/*Step 6 table adjustments*/
+
+#leftcol {
+   width: 165px;
+   
+}
+
+#rightcol{
+   width:645px;
+   
+}
+
+#article1{
+   width: 320px;
+   
+}
+
+#gutter {
+   width: 5px;
+   
+}
+
+#aside1 {
+   width: 320px;
+   background-color: yellow;
+   
+}
+
+#aside2{
+   width: 320px;
+   
+   
+}
+
+/*Step 6 heading font adjustment*/
+
+#leftcol h4{
+   color:yellow;
+   text-align: center;
+   
+}
+
+#article1 h4{
+   text-align: center;
+   color: red;
+   
+}
+#aside1 h4{
+   text-align: center;
+   
+}
+
+#aside2 h4{
+   text-align: center;
+   color: red;
+   
+}
+
+/*Step 6 inline image alignment */
+#article1 img{
+   float: right;
+   
+}
+
+#aside2 img{
+   float: right;
+   
+}
